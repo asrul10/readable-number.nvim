@@ -1,6 +1,8 @@
 ## Make your numbers easier to read
 This plugin quickly transforms your number from `10000000` to `10_000_000`
 
+![Preview](https://i.imgur.com/c0DgHFq.gif)
+
 ### Installation
 Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 ```lua
