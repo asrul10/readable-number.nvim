@@ -1,6 +1,4 @@
-local test = 100000000
-
-local function readableNumber()
+local function readable_number()
 	local curr = vim.fn.expand("<cword>")
 
 	if tonumber(curr) then
@@ -18,10 +16,13 @@ local function readableNumber()
 	end
 end
 
--- _G.readableNumber = readableNumber
-
-vim.api.nvim_set_keymap("n", "<leader>ww", ":lua readableNumber()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+	"n",
+	"<leader>ww",
+	":lua require('readable-number').readable_number()<CR>",
+	{ noremap = true, silent = true }
+)
 
 return {
-  readableNumber = readableNumber,
+	readable_number = readable_number,
 }
