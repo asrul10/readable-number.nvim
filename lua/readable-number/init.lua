@@ -16,13 +16,6 @@ local function readable_number()
 	end
 end
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<leader>ww",
-	":lua require('readable-number').readable_number()<CR>",
-	{ noremap = true, silent = true }
-)
-
 return {
 	readable_number = readable_number,
 }
