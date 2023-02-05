@@ -5,7 +5,7 @@ This plugin quickly transforms your number from `10000000` to `10_000_000`
 Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
 ```lua
 use {
-  'asrul10/readable-number.nvim', tag = '0.1.0',
+  'asrul10/readable-number.nvim', tag = '0.1.1',
 }
 ```
 
